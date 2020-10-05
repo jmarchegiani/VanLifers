@@ -1,0 +1,40 @@
+<div id="slider" class="slider-big create-post">
+	<h1> Comparti tus historias con nuestra comunidad </h1>
+</div>
+
+<form class="create-post-landing" #postForm="ngForm" (ngSubmit)="onSubmit()">
+
+	<div class="create-post">
+		<small class="invalid-field" *ngIf="!title.valid && title.touched" >
+			Titulo no valido
+		</small>
+		<input type="text" placeholder="Titulo" name="title" #title="ngModel" [(ngModel)]="post.title" required/>
+
+	</div>
+
+	<div class="create-content">
+		<small class="invalid-field" *ngIf="!content.valid && content.touched">
+			Contenido no valido
+		</small>
+		<textarea id="post-content" name="content" #content="ngModel" [(ngModel)]="post.content" required></textarea>
+
+	</div>
+
+	<div class="create-post">
+		<small class="invalid-field" *ngIf="!author.valid && author.touched">
+			Autor/a no valido
+		</small>
+		<input type="text" placeholder="Autor/a" #author="ngModel" [(ngModel)]="post.author" name="author" required />
+	</div>
+
+	<label class="image-upload-container btn btn-bwm">
+		<p></p>
+		<input #imageInput type="file" accept="image/*" (change)="uploadImages(imageInput)">
+		<p></p>
+	</label>
+
+	<div class="clearfix"></div>
+
+	<input type="submit" value="Crear post" class="btn btn-success" [disabled]="postForm.invalid" />
+
+</form>

@@ -1,0 +1,21 @@
+<app-slider></app-slider>
+<h2 class="subheader"> Articulos Relevantes </h2>
+
+<!-- LISTADO DE ARTICULOS -->
+<div class="floating">
+    <button (click)="toCreate()" title="Crear">+</button>
+</div>
+<div id="articles">
+<article class="article-item" id="article-template" *ngFor="let article of articles">
+    <div class="image-wrap">
+        <img src="http://localhost:3900/get-image/{{article.images[0]}}" alt="{{article.title}}"/>
+    </div>
+    <h2><a href="/article/{{article._id}}">{{article.title}}</a></h2>
+    <span class="date">
+        By {{article.author}}
+    </span>
+
+    <a href="/article/{{article._id}}">Leer Mas</a>
+    <div class="clearfix"></div>
+</article>
+</div>
