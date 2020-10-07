@@ -5,26 +5,27 @@
 <form class="create-post-landing" #postForm="ngForm" (ngSubmit)="onSubmit()">
 
 	<div class="create-post">
+		<input type="text" placeholder="Titulo" name="title" #title="ngModel" [(ngModel)]="post.title" required/>
 		<small class="invalid-field" *ngIf="!title.valid && title.touched" >
 			Titulo no valido
 		</small>
-		<input type="text" placeholder="Titulo" name="title" #title="ngModel" [(ngModel)]="post.title" required/>
 
 	</div>
 
 	<div class="create-content">
+
+		<textarea id="post-content" name="content" #content="ngModel" [(ngModel)]="post.content" required></textarea>
 		<small class="invalid-field" *ngIf="!content.valid && content.touched">
 			Contenido no valido
 		</small>
-		<textarea id="post-content" name="content" #content="ngModel" [(ngModel)]="post.content" required></textarea>
 
 	</div>
 
 	<div class="create-post">
+		<input type="text" placeholder="Autor/a" #author="ngModel" [(ngModel)]="post.author" name="author" required />
 		<small class="invalid-field" *ngIf="!author.valid && author.touched">
 			Autor/a no valido
 		</small>
-		<input type="text" placeholder="Autor/a" #author="ngModel" [(ngModel)]="post.author" name="author" required />
 	</div>
 
 	<label class="image-upload-container btn btn-bwm">

@@ -179,7 +179,7 @@ body {
 }
 
 .btn{
-	width: 77%;
+	width: 84%;
 	display: block;
 	background: black;
 	color: orange;
@@ -192,6 +192,7 @@ body {
 	border: none;
 	cursor: pointer;
 	border-radius: 10px;
+	margin-left: 7%;
 }
 
 .btn-success {
@@ -203,7 +204,7 @@ body {
 }
 
 .image-upload-container {
-	width: 75%;
+	width: 82%;
 	display: block;
 	background: black;
 	color: orange;
@@ -216,6 +217,7 @@ body {
 	border: none;
 	cursor: pointer;
 	border-radius: 10px;
+	margin-left: 7%;
 }
 
 
@@ -230,21 +232,23 @@ input[type="text"]{
 
 
 .create-post input[type="text"]{
-	width: 102%;
+	width: 112%;
 	height: 37px;
 	border: 1px solid #eee;
 	margin-bottom: 10px;
 	padding: 3px;
 	border-radius: 10px;
+	margin-left: 9%;
 }
 
 textarea {
-	width: 100%;
+	width: 110%;
 	padding: 12px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	height: 500px;
 	font-family: piazzola;
+	margin-left: 9%;
 }
 
 .box-name {
@@ -360,7 +364,8 @@ input[type="text"]:focus {
 	width: auto;
 	background: #f49d9d;
 	border-radius: 30%;
-	width: 103%;
+	width: 112%;
+	margin-left: 9%;
 }
 
 #formatted {
