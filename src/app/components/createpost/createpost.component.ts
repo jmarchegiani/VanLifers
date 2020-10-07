@@ -62,6 +62,7 @@ export class CreatepostComponent implements OnInit {
 		this._articleService.savePost(this.post).subscribe(
 			response => {
 				if(response.status == "Success"){
+					console.log(this.post.images)
 					this._router.navigate(['/create-success']);
 				}
 			},
