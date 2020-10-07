@@ -37,6 +37,14 @@ body {
 		transform: rotate(360deg)
 	}
 }
+@keyframes zoom {
+	from {
+		font-size: 150%;
+	}
+	to {
+		font-size: 220%;
+	}
+}
 
 #brand {
 	display: block;
@@ -97,13 +105,9 @@ body {
 	line-height: 0px;
 	color: white;
 	text-shadow: 0px 0px 5px #444;
-	background-image: url("https://lh3.googleusercontent.com/OL6-HvFstis5K5ybQLGiCCg4wK-3FmPsU4xu-usH9V57-pNDnaG-9CuvJyu5lA8lyVieNSupElQpPF924PyYKJ6ampgV5QtSDsLR8I24SAZRRJPRpXaEMVU1UMqNNCN9oKKLAZz2Gst7PjkZBIV3y7LYgjZLd-g1OkyBEHHA2Z3N1QVNoSd-LVLwPuJSY03l0XsvPskCuvqb-fjnSrSnpYeKBhHqIbv3AE1zha-2OnReQ2WHDgXkfykzJgn4SoyU3ZyxU1lNKPKvYlN2bzdpJE3aBM5d7HMIvdvutqZvKL-BJ4Nz7xVuZMRL-t_fyKJ_MJoO3_znqvFsVPbIkG_DUoQ7IgTPKEYJGj3v1WaK1pM6dzPsZio7HY3BPMDag81dkK64CDe8KhOdXx6Y_FOFDTRzPsGDVZ_VrvAhYtUOKsOW_99QlcstQxZpCtuE8Cvs379t55xZlneAr2WOQg0ZiYHSpDdmRz2lFnHoXWTqpDYuWGHDBikQxQVqKx_IC8TAGG2mQ2d-UPdWdeRRLO5v1YwHSYmcZIxStwab3GK7_4hOxAu4n9YUUjqOyrxfwaKaqlozXpOgmeWWgehsJtYq0jVfOCUOUrmuMPkZ8kKIusWHuY24hcgE6-sQqtyckUPEuWzH2FNO7qVxlRrjDoOfsh4cv16jHkDKa4tYpmUUdRLSyBejqADgXXmSzmJiKQ=w1920-h907-no?authuser=0");
-	background-color: rgb(83, 141, 180);
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+
 }
+
 
 #slider h1{
 	margin-top: 18.2px;
@@ -136,7 +140,20 @@ body {
 
 #slider.slider-big {
 	height: 346px;
+	background-image: url(thai-mountain.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
+#slider.slider-big-create {
+	height: 346px;
+	background: url(vietnamtemplo.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #slider.slider-big h1 {
@@ -144,6 +161,17 @@ body {
 	padding: 0px;
 	padding-top: 146px;
 	opacity: 1;
+	animation: zoom 30s forwards;
+	text-shadow: 0px 0px 12px #FF9B00;
+}
+
+#slider.slider-big-create h1 {
+	margin-top: 0.2px;
+	padding: 0px;
+	padding-top: 146px;
+	opacity: 1;
+	animation: zoom 30s forwards;
+	text-shadow: 0px 0px 12px #FF9B00;
 }
 
 
@@ -234,7 +262,7 @@ input[type="text"]{
 .create-post input[type="text"]{
 	width: 112%;
 	height: 37px;
-	border: 1px solid #eee;
+	border: 1px solid rgb(0, 0, 0);
 	margin-bottom: 10px;
 	padding: 3px;
 	border-radius: 10px;

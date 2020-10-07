@@ -1,5 +1,5 @@
-<div id="slider" class="slider-big create-post">
-	<h1> Comparti tus historias con nuestra comunidad </h1>
+<div id="slider" class="slider-big-create create-post">
+	<h1> El conocimiento nos hace responsables </h1>
 </div>
 
 <form class="create-post-landing" #postForm="ngForm" (ngSubmit)="onSubmit()">
@@ -30,7 +30,7 @@
 
 	<label class="image-upload-container btn btn-bwm">
 		<p></p>
-		<input #imageInput type="file" accept="image/*" (change)="uploadImages(imageInput)">
+		<input placeholder="Cargar Imagen" #imageInput type="file" accept="image/*" (change)="uploadImages(imageInput)">
 		<p></p>
 	</label>
 
