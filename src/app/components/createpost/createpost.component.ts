@@ -24,15 +24,15 @@ export class CreatepostComponent implements OnInit {
 		private _route: ActivatedRoute,
 		private _router: Router
 	) {
+	}
+
+	ngOnInit(): void {
 		this.post = {
 			title: '',
 			content: '',
 			author: '',
 			images : [],
 		};
-	}
-
-	ngOnInit(): void {
 	}
 
 	uploadImages(imageInput: any) {
