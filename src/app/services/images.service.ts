@@ -19,6 +19,6 @@ export class ImagesService{
 
         formData.append('file0', image);
 
-        return this._http.post("http://localhost:3900/upload-image", formData);
+        return this._http.post("http://172.31.20.192:3900/upload-image", formData);
     }
 }
