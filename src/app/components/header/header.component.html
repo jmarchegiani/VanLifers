@@ -18,8 +18,8 @@
                     <a href="https://www.instagram.com/brendalternative/" class="fa fa-instagram"></a>
                 </li>
                 <li>
-                    <button mat-button *ngIf="!isAuthenticated" (click)="login()"><i class="fa fa-user-circle"></i></button>
-                    <button mat-button *ngIf="isAuthenticated" (click)="logout()"><i class="fa fa-user-times"></i></button>
+                    <button class="admin-button" mat-button *ngIf="!isAuthenticated" (click)="login()"><i class="fa fa-user-circle"></i></button>
+                    <button class="admin-button" mat-button *ngIf="isAuthenticated" (click)="logout()"><i class="fa fa-user-times"></i></button>
                 </li>
 
 

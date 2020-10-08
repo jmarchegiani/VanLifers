@@ -94,6 +94,7 @@ body {
 	color: rgb(235, 143, 6);
 }
 
+
 .clearfix {
 	clear:both;
 	float: none;
@@ -424,6 +425,16 @@ input[type="text"]:focus {
 	padding: 15px;
 	border-radius: 36px;
   }
+
+.admin-button {
+	border: none;
+	background: none;
+	transition: 300ms all;
+}
+
+.admin-button:hover {
+	color: rgb(235, 143, 6);
+}
 
 /* RESPONSIVE 
 
