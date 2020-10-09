@@ -11,14 +11,26 @@ export class ImagesService{
     public _id : string;
     
     constructor(
-        private _http : HttpClient){
+        private _http : HttpClient
+        ){
+    }
+
+    getAuth () {
+        return 'Basic ' + Buffer.from('vanlifers:eravo384agb74a3b7aTH').toString('base64');
     }
 
     uploadImage(image: File):Observable<any>{
         const formData = new FormData();
 
         formData.append('file0', image);
+        var header = {
+            Authorization : this.getAuth()
+        }
+        var options = {
+            body : formData,
+            headers : header
+        }
 
-        return this._http.post("http://34.224.218.231:3900/upload-image", formData);
+        return this._http.post("http://34.224.218.231:3900/upload-image", options);
     }
 }
