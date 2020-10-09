@@ -23,15 +23,15 @@ export class ArticleService{
 	}
 
 	getArticles():Observable<any>{
-		return this._http.get('http://localhost:3900/get-articles');
+		return this._http.get('http://34.224.218.231:3900/get-articles');
 	}
 
 	getArticle(article_id : string):Observable<any>{
-		return this._http.get('http://localhost:3900/article/'+article_id)
+		return this._http.get('http://34.224.218.231:3900/article/'+article_id)
 	}
 
 	getImage(image_id : string) : Observable<any>{
-		return this._http.get('http://localhost:3900/get-image/'+image_id)
+		return this._http.get('http://34.224.218.231:3900/get-image/'+image_id)
 	}
 
 	savePost(post : any):Observable<any>{
@@ -46,7 +46,7 @@ export class ArticleService{
 			body : body,
 			headers : header
 		}
-		return this._http.post('http://localhost:3900/save', options)
+		return this._http.post('http://34.224.218.231:3900/save', options)
 	}
 
 }
