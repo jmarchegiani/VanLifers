@@ -19,7 +19,7 @@ import { SuccessComponent } from './components/success/success.component'
 
 const oktaConfig = {
 	issuer: 'https://dev-983675.okta.com/oauth2/default',
-	clientId: '0oa86hp2cPdPw1tqD5d5',
+	clientId: '0oa88psvHHIVFwNTv5d5',
 	redirectUri: window.location.origin + '/implicit/callback',
 	pkce: true
 }
