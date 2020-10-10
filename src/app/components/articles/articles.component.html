@@ -8,7 +8,7 @@
 <div id="articles">
 <article class="article-item" id="article-template" *ngFor="let article of articles">
     <div class="image-wrap">
-        <img src="https://34.224.218.231:8443/get-image/{{article.images[0]}}" alt="{{article.title}}"/>
+        <img src="https://backend.vanlifers.es:8443/get-image/{{article.images[0]}}" alt="{{article.title}}"/>
     </div>
     <h2><a href="/article/{{article._id}}">{{article.title}}</a></h2>
     <span class="date">

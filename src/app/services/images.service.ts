@@ -31,6 +31,6 @@ export class ImagesService{
             headers : header
         }
 
-        return this._http.post("https://34.224.218.231:8443/upload-image", options);
+        return this._http.post("https://backend.vanlifers.es:8443/upload-image", options);
     }
 }

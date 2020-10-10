@@ -3,7 +3,7 @@
         <article class="article-item article-detail">
             <h1 class="subheader">{{ article.title }}</h1>
             <div class="image-wrap">
-                <img src="https://34.224.218.231:8443/get-image/{{article.images[0]}}" />
+                <img src="https://backend.vanlifers.es:8443/get-image/{{article.images[0]}}" />
             </div>
             <span class="date">
                 Por {{ article.author }}
@@ -13,7 +13,7 @@
                 {{ article.content }}
             </div>
             <div class="post-images" *ngFor="let image of article.images">
-                <img src="https://34.224.218.231:8443/get-image/{{image}}" />
+                <img src="https://backend.vanlifers.es:8443/get-image/{{image}}" />
             </div>
             <div class="clearfix"></div>
         </article>
