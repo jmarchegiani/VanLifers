@@ -15,7 +15,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ArticleComponent } from './components/article/article.component';
 import { CreatepostComponent } from './components/createpost/createpost.component';
-import { SuccessComponent } from './components/success/success.component'
+import { SuccessComponent } from './components/success/success.component';
+import { ServiciosComponent } from './components/servicios/servicios.component'
 
 const oktaConfig = {
 	issuer: 'https://dev-983675.okta.com/oauth2/default',
@@ -36,7 +37,8 @@ const oktaConfig = {
 		SidebarComponent,
 		ArticleComponent,
 		CreatepostComponent,
-		SuccessComponent
+		SuccessComponent,
+		ServiciosComponent
 	],
 	imports: [
 		BrowserModule,
