@@ -63,31 +63,57 @@ body {
 	margin-right: 22px;
 }
 
-#menu {
-	width: 50%;
+.navbar {
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+	margin: auto;
+}
+
+.navbar a, button {
 	float: right;
-	font-size: large;
-	margin-top: -14px;
-}
-
-#menu ul {
-	line-height: 85px;
-	width: 60%;
-	float: right;
-}
-
-#menu ul li {
-	display: inline-block;
-	list-style: none;
-	height: 46px;
-	margin-left: 15px;
-	margin-right: 15px;
-}
-
-#menu a{
+	display: block;
+	text-align: center;
+	padding: 30px 34px;
 	text-decoration: none;
-	color: #444;
-	transition: 300ms all;
+	font-size: 17px;
+	color: black;
+}
+ 
+.navbar a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.navbar .icon {
+	display: none;
+	float: right;
+}
+
+@media screen and (max-width: 700px) {
+	.navbar a, button {
+		display: none;
+	}
+
+	.navbar a.icon {
+	  float: right;
+	  display: block;
+	}
+
+	.navbar.responsive {
+		background-color: white;
+		opacity: 80%;
+	}
+
+	.navbar.responsive .icon {
+		right: 0;
+	}
+
+	.navbar.responsive a, button {
+		float: none;
+		display: block;
+	}
+
 }
 
 #menu a:hover{
@@ -322,7 +348,8 @@ input[type="text"]:focus {
 	margin-left: 55px;
 }
 
-@media (max-width: 700px) {
+
+@media screen and (max-width: 700px) {
 	.article-item {
 		width: auto;
 		border-bottom: 1px solid #eee;
@@ -331,9 +358,7 @@ input[type="text"]:focus {
 		text-align: left;
 		margin-left: 20px;
 	}
-	#menu {
-		display: none;
-	}
+
 	@keyframes zoom {
 		from {
 			font-size: 150%;

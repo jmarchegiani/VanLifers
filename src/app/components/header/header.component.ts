@@ -16,6 +16,17 @@ export class HeaderComponent implements OnInit {
 		);
 	}
 
+	expandNavbar() {
+		var doc = document.getElementById("menu");
+		if (doc.className === "navbar"){
+			doc.className += " responsive";
+			console.log("entre");
+		}
+		else {
+			doc.className = "navbar"
+		}
+	}
+
 	ngOnInit() {
 		this.OktaAuth.isAuthenticated().then((auth) => {this.isAuthenticated = auth})
 	};
